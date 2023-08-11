@@ -61,7 +61,7 @@ download_task = PythonOperator(
     dag=dag,
 )
 
-## Task 2:
+# Task 2:
 transform_task = PythonOperator(
     task_id="transform_data",
     python_callable=transform_data,
